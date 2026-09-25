@@ -1,0 +1,8 @@
+/* M2M Tech — Webfonts
+   Display: Space Grotesk (geometric, technical headline face — echoes the
+            squared, bold lettering of the M2M mark).
+   Text:    IBM Plex Sans (neutral industrial workhorse).
+   Mono:    IBM Plex Mono (telemetry, code, metrics, labels).
+   NOTE: substituted from Google Fonts — the original brand fonts were not
+   provided. Flagged in readme.md; swap in licensed files if available. */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");

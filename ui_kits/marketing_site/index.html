@@ -1,0 +1,45 @@
+<!-- @dsCard group="Marketing Site" viewport="1200x760" name="M2M Tech — Homepage" subtitle="Physical AI operating layer marketing page" -->
+<!-- @startingPoint section="Marketing Site" subtitle="Full marketing homepage" viewport="1200x900" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M2M Tech — Homepage</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"><\/script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"><\/script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"><\/script>
+<script src="../../_ds_bundle.js"><\/script>
+<style>body{margin:0;background:var(--bg-page)}</style>
+</head><body>
+<div id="root"></div>
+<script src="../_shared/Icons.jsx" type="text/babel"><\/script>
+<script src="Header.jsx" type="text/babel"><\/script>
+<script src="Hero.jsx" type="text/babel"><\/script>
+<script src="Sections.jsx" type="text/babel"><\/script>
+<script src="Footer.jsx" type="text/babel"><\/script>
+<script type="text/babel">
+const { Dialog, Button, Input, Select } = window.M2MTechDesignSystem_02d78c;
+function App() {
+  const [open, setOpen] = React.useState(false);
+  const cta = () => setOpen(true);
+  return (
+    <div>
+      <window.SiteHeader onCTA={cta} />
+      <window.Hero onCTA={cta} />
+      <window.Integrations />
+      <window.LoopGrid />
+      <window.Metrics />
+      <window.CaseStudy />
+      <window.CTA onCTA={cta} />
+      <window.SiteFooter />
+      <Dialog open={open} title="Book a strategy session" onClose={() => setOpen(false)}
+        footer={<><Button variant="outline" onClick={() => setOpen(false)}>Cancel</Button><Button onClick={() => setOpen(false)}>Request session</Button></>}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <Input label="Work email" placeholder="you@company.com" />
+          <Select label="Primary industry" placeholder="Choose…" options={["Manufacturing", "Energy", "Logistics", "Data centers", "Airports"]} />
+        </div>
+      </Dialog>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+<\/script>
+</body></html>

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Card & StatCard" subtitle="Surfaces + KPI tiles" -->
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"><\/script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"><\/script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"><\/script>
+<script src="../../_ds_bundle.js"><\/script>
+<style>body{margin:0;padding:22px;background:var(--bg-page);font-family:var(--font-sans)}#r{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.grp{display:flex;flex-wrap:wrap;gap:12px;align-items:center}</style>
+<div id="root"></div>
+<script type="text/babel">
+const { Button, IconButton, Badge, Tag, StatusDot, Input, Textarea, Select, Checkbox, Radio, Switch, Card, CardBody, CardHeader, CardFooter, StatCard, Tabs, Tooltip, Dialog, Toast, Logo } = window.M2MTechDesignSystem_02d78c;
+function Demo(){return (
+  <div style={{display:'grid',gridTemplateColumns:'1.3fr 1fr 1fr',gap:16,maxWidth:660,alignItems:'start'}}>
+    <Card variant="signal"><CardBody><div className="m2m-eyebrow" style={{marginBottom:8}}>DEPLOYMENT</div><h4 style={{margin:'0 0 6px'}}>Plant 04 — Line B</h4><p style={{margin:0,fontSize:14,color:'var(--text-muted)'}}>42 edge nodes streaming.</p></CardBody><CardFooter><Button size="sm">Open console</Button></CardFooter></Card>
+    <StatCard label="OEE lift" value="30" unit="%" delta="180-day avg" direction="up" />
+    <StatCard label="Downtime" value="50" unit="%" delta="reduced" direction="down" />
+  </div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+<\/script>

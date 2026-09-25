@@ -1,0 +1,91 @@
+/* M2M Tech — Color tokens
+   Brand: golden-yellow signal (#FFCE00) on near-black ink.
+   Sampled from the M2M Tech circular lightning mark. */
+:root {
+  /* ---- Brand ---- */
+  --brand-yellow: #FFCE00;        /* primary signal / CTA */
+  --brand-yellow-bright: #FFDD33; /* hover / highlight */
+  --brand-yellow-deep: #E0B400;   /* pressed / on-light */
+  --brand-yellow-wash: #FFF6CC;   /* tint surface */
+  --brand-ink: #0A0B0D;           /* near-black core */
+  --brand-black: #000000;
+
+  /* ---- Neutral ramp (cool graphite) ---- */
+  --neutral-0:  #FFFFFF;
+  --neutral-25: #FAFAFA;
+  --neutral-50: #F4F5F6;
+  --neutral-100:#E9EBED;
+  --neutral-200:#D6D9DD;
+  --neutral-300:#B4B9BF;
+  --neutral-400:#878E96;
+  --neutral-500:#5E656E;
+  --neutral-600:#434A53;
+  --neutral-700:#2D333A;
+  --neutral-800:#1C2126;
+  --neutral-900:#12161A;
+  --neutral-950:#0A0B0D;
+
+  /* ---- Semantic status ---- */
+  --status-online:  #22C55E;  /* healthy / live */
+  --status-online-wash:#DCFCE7;
+  --status-warn:    #F59E0B;  /* degraded */
+  --status-warn-wash:#FEF3C7;
+  --status-fault:   #EF4444;  /* fault / offline */
+  --status-fault-wash:#FEE2E2;
+  --status-info:    #2563EB;  /* informational */
+  --status-info-wash:#DBEAFE;
+
+  /* ---- Semantic aliases (light surface, default) ---- */
+  --bg-page:        var(--neutral-25);
+  --bg-surface:     var(--neutral-0);
+  --bg-sunken:      var(--neutral-50);
+  --bg-inverse:     var(--brand-ink);
+
+  --surface-card:   var(--neutral-0);
+  --surface-raised: var(--neutral-0);
+  --surface-inset:  var(--neutral-50);
+
+  --text-strong:    var(--neutral-950);
+  --text-body:      var(--neutral-700);
+  --text-muted:     var(--neutral-500);
+  --text-subtle:    var(--neutral-400);
+  --text-on-brand:  var(--brand-ink);      /* dark text on yellow */
+  --text-on-inverse:var(--neutral-25);     /* light text on ink */
+
+  --border-subtle:  var(--neutral-100);
+  --border-default: var(--neutral-200);
+  --border-strong:  var(--neutral-300);
+  --border-focus:   var(--brand-yellow);
+
+  --accent:         var(--brand-yellow);
+  --accent-hover:   var(--brand-yellow-bright);
+  --accent-press:   var(--brand-yellow-deep);
+  --on-accent:      var(--brand-ink);
+
+  --link:           var(--neutral-950);
+  --link-hover:     var(--brand-yellow-deep);
+}
+
+/* Dark scope — apply to hero / console shells */
+.m2m-dark, [data-theme="dark"] {
+  --bg-page:        var(--neutral-950);
+  --bg-surface:     var(--neutral-900);
+  --bg-sunken:      var(--neutral-800);
+  --bg-inverse:     var(--neutral-0);
+
+  --surface-card:   var(--neutral-900);
+  --surface-raised: var(--neutral-800);
+  --surface-inset:  var(--neutral-950);
+
+  --text-strong:    var(--neutral-0);
+  --text-body:      var(--neutral-200);
+  --text-muted:     var(--neutral-400);
+  --text-subtle:    var(--neutral-500);
+
+  --border-subtle:  var(--neutral-800);
+  --border-default: var(--neutral-700);
+  --border-strong:  var(--neutral-600);
+
+  --link:           var(--neutral-0);
+  --link-hover:     var(--brand-yellow);
+}

@@ -1,0 +1,37 @@
+/* M2M Tech — Typography tokens */
+:root {
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Weights */
+  --fw-regular: 400;   /* @kind other */
+  --fw-medium: 500;    /* @kind other */
+  --fw-semibold: 600;  /* @kind other */
+  --fw-bold: 700;      /* @kind other */
+
+  /* Type scale (1.25 major-third, 16px base) */
+  --fs-display: 4.209rem;  /* 67px hero */
+  --fs-h1: 3.157rem;       /* 50px */
+  --fs-h2: 2.369rem;       /* 38px */
+  --fs-h3: 1.777rem;       /* 28px */
+  --fs-h4: 1.333rem;       /* 21px */
+  --fs-lg: 1.125rem;       /* 18px */
+  --fs-body: 1rem;         /* 16px */
+  --fs-sm: 0.875rem;       /* 14px */
+  --fs-xs: 0.75rem;        /* 12px */
+  --fs-2xs: 0.6875rem;     /* 11px eyebrow/label */
+
+  /* Line heights */
+  --lh-tight: 1.05;    /* @kind other */
+  --lh-snug: 1.2;      /* @kind other */
+  --lh-normal: 1.5;    /* @kind other */
+  --lh-relaxed: 1.65;  /* @kind other */
+
+  /* Letter spacing */
+  --ls-tight: -0.03em;   /* @kind other */
+  --ls-snug: -0.01em;    /* @kind other */
+  --ls-normal: 0;        /* @kind other */
+  --ls-wide: 0.04em;     /* @kind other */
+  --ls-eyebrow: 0.16em;  /* @kind other */
+}

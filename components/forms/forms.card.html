@@ -1,0 +1,23 @@
+<!-- @dsCard group="Components" viewport="700x330" name="Form controls" subtitle="Input, select, choice, switch" -->
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"><\/script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"><\/script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"><\/script>
+<script src="../../_ds_bundle.js"><\/script>
+<style>body{margin:0;padding:22px;background:var(--bg-page);font-family:var(--font-sans)}#r{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.grp{display:flex;flex-wrap:wrap;gap:12px;align-items:center}</style>
+<div id="root"></div>
+<script type="text/babel">
+const { Button, IconButton, Badge, Tag, StatusDot, Input, Textarea, Select, Checkbox, Radio, Switch, Card, CardBody, CardHeader, CardFooter, StatCard, Tabs, Tooltip, Dialog, Toast, Logo } = window.M2MTechDesignSystem_02d78c;
+function Demo(){return (
+  <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:20,maxWidth:640}}>
+    <Input label="Work email" placeholder="you@company.com" />
+    <Select label="Industry" placeholder="Choose…" options={["Manufacturing","Energy","Logistics"]} />
+    <Input label="Site ID" error="Already registered" defaultValue="PLT-004" />
+    <div style={{display:'flex',flexDirection:'column',gap:10,justifyContent:'center'}}>
+      <Checkbox label="Enable evidence fabric" defaultChecked />
+      <Radio name="p" label="Edge only" defaultChecked /><Radio name="p" label="Edge + Agent" />
+      <Switch label="Auto-remediation" defaultChecked />
+    </div>
+  </div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+<\/script>
